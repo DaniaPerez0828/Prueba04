@@ -14,5 +14,14 @@ namespace ControlAsistencia
             SesionesTotales = sesionesTotales;
             SesionesAsistidas = 0;
         }
+
+        public void RegistrarAsistencia(int asistencias)
+        {
+            SesionesAsistidas += asistencias;
+            if (SesionesAsistidas > SesionesTotales)
+            {
+                SesionesAsistidas = SesionesTotales; // No puede asistir más de lo total
+            }
+        }
     }
 }
