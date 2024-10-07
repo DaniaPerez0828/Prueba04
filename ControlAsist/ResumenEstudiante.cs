@@ -7,7 +7,7 @@ namespace ControlAsistencia
         public string ObtenerInformacionEstudiante(Estudiante estudiante)
         {
             double porcentaje = (double)estudiante.SesionesAsistidas / estudiante.SesionesTotales * 100;
-            string estado = porcentaje >= 75 ? "Aprobado" : "Reprobado"; // Ejemplo de lógica para el estado
+            string estado = porcentaje >= 75 ? "Aprobado" : "Reprobado"; 
 
             return $"| Estudiante         | {estudiante.Nombre}                          |\n" +
                    $"|--------------------|---------------------------------------------|\n" +
