@@ -41,7 +41,11 @@ namespace ControlAsistencia
                 estudiante.RegistrarAsistencia(sesionesAsistidas);
             }
 
-            
+            Console.WriteLine("\nResumen de estudiantes:");
+            foreach (var estudiante in estudiantes)
+            {
+                Console.WriteLine(ResumenEstudiante.ObtenerResumen(estudiante));
+            }
         }
     }
 }
