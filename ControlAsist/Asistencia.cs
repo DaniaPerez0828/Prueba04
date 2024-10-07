@@ -14,6 +14,11 @@ namespace ControlAsistencia
             return (double)asistidas / totales * 100;
         }
 
+        public static bool CumpleMinimo(int asistidas, int totales)
+        {
+            double porcentaje = CalcularPorcentaje(asistidas, totales);
+            return porcentaje >= MINIMO_ASISTENCIA;
+        }
     }
 }
 
