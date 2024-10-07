@@ -20,7 +20,7 @@ namespace ControlAsistencia
             SesionesAsistidas += asistencias;
             if (SesionesAsistidas > SesionesTotales)
             {
-                SesionesAsistidas = SesionesTotales; // No puede asistir más de lo total
+                SesionesAsistidas = SesionesTotales; 
             }
         }
     }
